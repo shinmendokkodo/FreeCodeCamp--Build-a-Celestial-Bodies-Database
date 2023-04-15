@@ -1,3 +1,5 @@
+#!/bin/bash
+
 DB_NAME="universe"
 TABLES=("galaxy" "star" "planet" "moon" "asteroid")
 
@@ -8,13 +10,13 @@ done
 
 echo "Inserting data into the galaxy table"
 while IFS=, read -r name description age_in_millions_of_years distance_from_earth; do
-  psql -U freecodecamp -d $DB_NAME -c "INSERT INTO galaxy (name, description, age_in_millions_of_years, distance_from_earth) VALUES ('$name', '$description', $age_in_millions_of_years, $distance_from_earth);" &>/dev/null
+  psql -U freecodecamp -d $DB_NAME -c "INSERT INTO galaxy (name, description, age_in_millions_of_years, distance_from_earth) VALUES ('$name', '$description', $age_in_millions_of_years, $distance_from_earth);" #&>/dev/null
   echo "Inserted galaxy: $name"
 done < <(tail -n +2 galaxy.csv)
 
 echo "Inserting data into the asteroid table"
 while IFS=, read -r name diameter_km is_spherical distance_from_earth; do
-  psql -U freecodecamp -d $DB_NAME -c "INSERT INTO asteroid (name, diameter_km, is_spherical, distance_from_earth) VALUES ('$name', $diameter_km, $is_spherical, $distance_from_earth);" &>/dev/null
+  psql -U freecodecamp -d $DB_NAME -c "INSERT INTO asteroid (name, diameter_km, is_spherical, distance_from_earth) VALUES ('$name', $diameter_km, $is_spherical, $distance_from_earth);" #&>/dev/null
   echo "Inserted asteroid: $name"
 done < <(tail -n +2 asteroid.csv)
 

@@ -35,5 +35,5 @@ CREATE TABLE asteroid (
   name VARCHAR(255) UNIQUE NOT NULL,
   diameter_km NUMERIC(10, 2) NOT NULL,
   is_spherical BOOLEAN NOT NULL,
-  distance_from_earth NUMERIC(10, 2) NOT NULL
+  distance_from_earth NUMERIC(15, 2) NOT NULL
 );
