@@ -1,0 +1,4 @@
+name,diameter_km,is_spherical,distance_from_earth
+Ceres,946.14,true,413000000
+Vesta,525.4,false,225000000
+Pallas,512,false,214000000

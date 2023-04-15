@@ -1,0 +1,14 @@
+name,star_name,has_life,planet_type
+Earth,Sun,true,Terrestrial
+Mars,Sun,false,Terrestrial
+Venus,Sun,false,Terrestrial
+Jupiter,Sun,false,Gas Giant
+Saturn,Sun,false,Gas Giant
+Uranus,Sun,false,Ice Giant
+Neptune,Sun,false,Ice Giant
+Proxima Centauri b,Proxima Centauri,false,Terrestrial
+Gliese 581 g,Alpha Centauri,false,Terrestrial
+Kepler-186 f,Sirius,false,Terrestrial
+Kepler-22b,Vega,false,Super-Earth
+Kepler-452b,Betelgeuse,false,Super-Earth
+Kepler-62f,Betelgeuse,false,Super-Earth

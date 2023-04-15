@@ -1,0 +1,7 @@
+name,galaxy_name,is_spherical,age_in_millions_of_years
+Sun,Milky Way,true,4600
+Alpha Centauri,Milky Way,true,6000
+Proxima Centauri,Milky Way,true,4500
+Sirius,Milky Way,true,300
+Vega,Milky Way,true,500
+Betelgeuse,Milky Way,true,10000
